@@ -15,7 +15,7 @@ struct XBikeApp: App {
     var body: some Scene {
         WindowGroup {
             if hasSeenOnboarding {
-                // Add main View
+                MainTabView()
             } else {
                 OnboardingView()
             }
