@@ -23,10 +23,12 @@ struct MainTabView: View {
 }
 
 struct CurrentRideView: View {
+    @StateObject private var locationManager = LocationManager()
     
     var body: some View {
         VStack {
-            Button("Tracking") {
+            Button(locationManager.isTracking ? "Stop Tracking" : "Start Tracking") {
+                locationManager.toggleTracking()
             }
             .padding()
             .background(Color.blue)
