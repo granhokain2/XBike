@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4401CE02D9AECBF002DD98E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4401CDF2D9AECBE002DD98E /* MainTabView.swift */; };
+		A4401CE32D9AED3D002DD98E /* RideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4401CE22D9AED3B002DD98E /* RideModel.swift */; };
 		A4F7A9AF2D9ADCA200088B22 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7A9AA2D9ADCA200088B22 /* OnboardingView.swift */; };
 		A4F7A9B12D9ADCA200088B22 /* XBikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7A9AD2D9ADCA200088B22 /* XBikeApp.swift */; };
 		A4F7A9B22D9ADCA200088B22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F7A9A72D9ADCA200088B22 /* Preview Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A4401CDF2D9AECBE002DD98E /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		A4401CE22D9AED3B002DD98E /* RideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideModel.swift; sourceTree = "<group>"; };
 		A4F7A9652D9AD39600088B22 /* XBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F7A9782D9AD39800088B22 /* XBikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F7A9822D9AD39800088B22 /* XBikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,9 +79,18 @@
 		A4401CDE2D9AEAF0002DD98E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A4401CDF2D9AECBE002DD98E /* MainTabView.swift */,
 				A4F7A9AA2D9ADCA200088B22 /* OnboardingView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A4401CE12D9AED1C002DD98E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4401CE22D9AED3B002DD98E /* RideModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A4F7A95C2D9AD39600088B22 = {
@@ -111,6 +124,7 @@
 		A4F7A9AE2D9ADCA200088B22 /* XBike */ = {
 			isa = PBXGroup;
 			children = (
+				A4401CE12D9AED1C002DD98E /* Model */,
 				A4401CDE2D9AEAF0002DD98E /* View */,
 				A4F7A9A82D9ADCA200088B22 /* Preview Content */,
 				A4F7A9A92D9ADCA200088B22 /* Assets.xcassets */,
@@ -274,7 +288,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4F7A9AF2D9ADCA200088B22 /* OnboardingView.swift in Sources */,
+				A4401CE02D9AECBF002DD98E /* MainTabView.swift in Sources */,
 				A4F7A9B12D9ADCA200088B22 /* XBikeApp.swift in Sources */,
+				A4401CE32D9AED3D002DD98E /* RideModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
