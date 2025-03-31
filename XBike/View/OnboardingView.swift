@@ -13,10 +13,11 @@ struct OnboardingView: View {
     
     var body: some View {
         TabView {
-            OnboardingPage(icon: "star.fill", title: "Simple to Use")
-            OnboardingPage(icon: "map.fill", title: "Track Your Rides")
-            OnboardingPage(icon: "chart.bar.fill", title: "See Your Progress")
+            OnboardingPage(icon: "star.fill", title: "Extremely simple to use.")
+            OnboardingPage(icon: "map.fill", title: "Track your time and distance.")
+            OnboardingPage(icon: "chart.bar.fill", title: "See your progress and challenge yourself!")
         }
+        .background(Color.orange)
         .tabViewStyle(PageTabViewStyle())
         .overlay(
             Button("Get Started") {
@@ -41,8 +42,10 @@ struct OnboardingPage: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 100, height: 100)
+                .foregroundColor(.white)
                 .padding()
             Text(title)
+                .foregroundColor(.white)
                 .font(.title)
                 .padding()
         }
