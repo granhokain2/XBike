@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A4F7A9AF2D9ADCA200088B22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7A9AA2D9ADCA200088B22 /* ContentView.swift */; };
-		A4F7A9B02D9ADCA200088B22 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7A9AB2D9ADCA200088B22 /* Item.swift */; };
+		A4F7A9AF2D9ADCA200088B22 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7A9AA2D9ADCA200088B22 /* OnboardingView.swift */; };
 		A4F7A9B12D9ADCA200088B22 /* XBikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7A9AD2D9ADCA200088B22 /* XBikeApp.swift */; };
 		A4F7A9B22D9ADCA200088B22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F7A9A72D9ADCA200088B22 /* Preview Assets.xcassets */; };
 		A4F7A9B32D9ADCA200088B22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F7A9A92D9ADCA200088B22 /* Assets.xcassets */; };
@@ -40,8 +39,7 @@
 		A4F7A9822D9AD39800088B22 /* XBikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F7A9A72D9ADCA200088B22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4F7A9A92D9ADCA200088B22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A4F7A9AA2D9ADCA200088B22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A4F7A9AB2D9ADCA200088B22 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A4F7A9AA2D9ADCA200088B22 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		A4F7A9AC2D9ADCA200088B22 /* XBike.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XBike.entitlements; sourceTree = "<group>"; };
 		A4F7A9AD2D9ADCA200088B22 /* XBikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XBikeApp.swift; sourceTree = "<group>"; };
 		A4F7A9B42D9ADCA800088B22 /* XBikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XBikeTests.swift; sourceTree = "<group>"; };
@@ -74,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4401CDE2D9AEAF0002DD98E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4F7A9AA2D9ADCA200088B22 /* OnboardingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A4F7A95C2D9AD39600088B22 = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +111,9 @@
 		A4F7A9AE2D9ADCA200088B22 /* XBike */ = {
 			isa = PBXGroup;
 			children = (
+				A4401CDE2D9AEAF0002DD98E /* View */,
 				A4F7A9A82D9ADCA200088B22 /* Preview Content */,
 				A4F7A9A92D9ADCA200088B22 /* Assets.xcassets */,
-				A4F7A9AA2D9ADCA200088B22 /* ContentView.swift */,
-				A4F7A9AB2D9ADCA200088B22 /* Item.swift */,
 				A4F7A9AC2D9ADCA200088B22 /* XBike.entitlements */,
 				A4F7A9AD2D9ADCA200088B22 /* XBikeApp.swift */,
 			);
@@ -218,6 +223,7 @@
 				};
 			};
 			buildConfigurationList = A4F7A9602D9AD39600088B22 /* Build configuration list for PBXProject "XBike" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -267,8 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4F7A9AF2D9ADCA200088B22 /* ContentView.swift in Sources */,
-				A4F7A9B02D9ADCA200088B22 /* Item.swift in Sources */,
+				A4F7A9AF2D9ADCA200088B22 /* OnboardingView.swift in Sources */,
 				A4F7A9B12D9ADCA200088B22 /* XBikeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
