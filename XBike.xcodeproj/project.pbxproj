@@ -10,6 +10,7 @@
 		A4401CE02D9AECBF002DD98E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4401CDF2D9AECBE002DD98E /* MainTabView.swift */; };
 		A4401CE32D9AED3D002DD98E /* RideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4401CE22D9AED3B002DD98E /* RideModel.swift */; };
 		A4DB41172D9AEEFF0039EAF4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB41162D9AEEFD0039EAF4 /* LocationManager.swift */; };
+		A4DB41192D9B071C0039EAF4 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB41182D9B07170039EAF4 /* ModalView.swift */; };
 		A4F7A9AF2D9ADCA200088B22 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7A9AA2D9ADCA200088B22 /* OnboardingView.swift */; };
 		A4F7A9B12D9ADCA200088B22 /* XBikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7A9AD2D9ADCA200088B22 /* XBikeApp.swift */; };
 		A4F7A9B22D9ADCA200088B22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F7A9A72D9ADCA200088B22 /* Preview Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		A4401CDF2D9AECBE002DD98E /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		A4401CE22D9AED3B002DD98E /* RideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideModel.swift; sourceTree = "<group>"; };
 		A4DB41162D9AEEFD0039EAF4 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		A4DB41182D9B07170039EAF4 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		A4F7A9652D9AD39600088B22 /* XBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F7A9782D9AD39800088B22 /* XBikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F7A9822D9AD39800088B22 /* XBikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,7 @@
 		A4401CDE2D9AEAF0002DD98E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A4DB41182D9B07170039EAF4 /* ModalView.swift */,
 				A4401CDF2D9AECBE002DD98E /* MainTabView.swift */,
 				A4F7A9AA2D9ADCA200088B22 /* OnboardingView.swift */,
 			);
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4DB41192D9B071C0039EAF4 /* ModalView.swift in Sources */,
 				A4F7A9AF2D9ADCA200088B22 /* OnboardingView.swift in Sources */,
 				A4DB41172D9AEEFF0039EAF4 /* LocationManager.swift in Sources */,
 				A4401CE02D9AECBF002DD98E /* MainTabView.swift in Sources */,

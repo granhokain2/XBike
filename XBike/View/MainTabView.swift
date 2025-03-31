@@ -24,16 +24,33 @@ struct MainTabView: View {
 
 struct CurrentRideView: View {
     @StateObject private var locationManager = LocationManager()
+    @State private var isTimerPresented = false
     
     var body: some View {
-        VStack {
-            Button(locationManager.isTracking ? "Stop Tracking" : "Start Tracking") {
-                locationManager.toggleTracking()
+        NavigationView {
+            ZStack {
+                EmptyView() //GoogleMapView
+                VStack {
+                    Spacer()
+                    TimerModalView(isPresented: $isTimerPresented)
+                        .cornerRadius(20)
+                        .padding(.bottom, 20)
+                }
             }
-            .padding()
-            .background(Color.blue)
-            .foregroundColor(.white)
-            .cornerRadius(10)
+            .navigationBarTitle("Current Ride", displayMode: .inline)
+            .toolbarBackground(Color.orange, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        isTimerPresented = true
+                    }) {
+                        Image(systemName: "plus")
+                            .font(.title2)
+                            .foregroundColor(.white)
+                    }
+                }
+            }
         }
     }
 }
@@ -42,10 +59,18 @@ struct MyProgressView: View {
     @State private var rides: [Ride] = []
     
     var body: some View {
-        List(rides) { ride in
-            VStack(alignment: .leading) {
-                Text("From: \(ride.startAddress) to \(ride.endAddress)")
-                Text("Duration: \(ride.duration) min, Distance: \(ride.distance) km")
+        NavigationView {
+            List(rides) { ride in
+                VStack(alignment: .leading) {
+                    Text("From: \(ride.startAddress) to \(ride.endAddress)")
+                    Text("Duration: \(ride.duration) min, Distance: \(ride.distance) km")
+                }
+            }
+            .navigationBarTitle("My Progress", displayMode: .inline)
+            .toolbarBackground(Color.orange, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {}
             }
         }
     }
